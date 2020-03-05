@@ -26,7 +26,7 @@ const ViewProducts = () => {
         {categoryName}
       </div>
       </div>
-      <CardHolder data={data} setter={setCartCount} value={cartCount}/>
+      <CardHolder data={categoryName === 'All'? data : data.filter(prod => prod.prodCategory === categoryName)} setter={setCartCount} value={cartCount}/>
     </div>
   );
 }
