@@ -19,9 +19,7 @@ exports[`the Table component should render correctly 1`] = `
         </div>
       </div>
       <div>
-        <div>
-          apple
-        </div>
+        <div />
         <div>
           50
         </div>
@@ -29,13 +27,11 @@ exports[`the Table component should render correctly 1`] = `
           2
         </div>
         <div>
-          subtotal
+          100
         </div>
       </div>
       <div>
-        <div>
-          apple
-        </div>
+        <div />
         <div>
           50
         </div>
@@ -43,13 +39,11 @@ exports[`the Table component should render correctly 1`] = `
           2
         </div>
         <div>
-          subtotal
+          100
         </div>
       </div>
       <div>
-        <div>
-          apple
-        </div>
+        <div />
         <div>
           50
         </div>
@@ -57,13 +51,11 @@ exports[`the Table component should render correctly 1`] = `
           2
         </div>
         <div>
-          subtotal
+          100
         </div>
       </div>
       <div>
-        <div>
-          apple
-        </div>
+        <div />
         <div>
           50
         </div>
@@ -71,7 +63,7 @@ exports[`the Table component should render correctly 1`] = `
           2
         </div>
         <div>
-          subtotal
+          100
         </div>
       </div>
     </div>

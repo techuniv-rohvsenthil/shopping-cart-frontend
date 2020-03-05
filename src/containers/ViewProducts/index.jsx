@@ -10,6 +10,9 @@ const ViewProducts = () => {
   const [data] = useProductDetails();
   const [, cartCount, setCartCount] = useCartDetails();
   const [categoryName, setCategoryName] = useState('All');
+  const categories = data.map((prod) => prod.prodCategory)
+  const category = [...new Set(categories)];
+  category.unshift('All');
   return (
     <div>
       <div className={styles.positioning}>
@@ -18,7 +21,7 @@ const ViewProducts = () => {
       <Header />
       <div>
         Filter Categories
-      <FilterTab data={data} setter={setCategoryName}/>
+      <FilterTab data={category} setter={setCategoryName}/>
       <div className={styles.filterType}>
         {categoryName}
       </div>

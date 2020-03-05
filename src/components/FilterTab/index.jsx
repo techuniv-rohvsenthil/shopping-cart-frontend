@@ -10,11 +10,7 @@ const FilterTab = (props) => {
       <div />
     );
   }
-
-  const categories = data.map((prod) => prod.prodCategory)
-  const category = [...new Set(categories)];
-  category.unshift('All');
-  const tabs = category.map((tab) => (
+  const tabs = data.map((tab) => (
     <Button buttonTestID="test-btn" setter={setter}>{tab}</Button>
   ));
   return (
@@ -25,7 +21,7 @@ const FilterTab = (props) => {
 };
 
 FilterTab.propTypes = {
-  data: propTypes.arrayOf(propTypes.object).isRequired,
+  data: propTypes.arrayOf(propTypes.string).isRequired,
 };
 
 

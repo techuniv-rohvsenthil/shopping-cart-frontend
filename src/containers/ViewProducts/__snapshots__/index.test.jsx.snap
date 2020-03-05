@@ -27,7 +27,14 @@ exports[`the ViewProducts component should render correctly 1`] = `
     </div>
     <div>
       Filter Categories
-      <div />
+      <div>
+        <button
+          data-testid="test-btn"
+          type="button"
+        >
+          All
+        </button>
+      </div>
       <div>
         All
       </div>

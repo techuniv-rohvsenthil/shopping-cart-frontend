@@ -7,12 +7,20 @@ exports[`the FilterTab component should render correctly 1`] = `
       data-testid="test-btn"
       type="button"
     >
-      All
+      cat1
     </button>
     <button
       data-testid="test-btn"
       type="button"
-    />
+    >
+      cat2
+    </button>
+    <button
+      data-testid="test-btn"
+      type="button"
+    >
+      cat3
+    </button>
   </div>
 </DocumentFragment>
 `;
