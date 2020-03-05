@@ -37,7 +37,7 @@ const Cart = () => {
               <div>
             <Checkout cart={data}/>
             </div>
-            <button type="button" className={styles.button} onClick={() => {history.goBack()}}>Continue Shopping</button>
+            <button type="button" className={styles.button} onClick={() => {window.history.back()}}>Continue Shopping</button>
           </div>
       </div>
     </div>

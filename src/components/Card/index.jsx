@@ -9,7 +9,7 @@ const Card = (props) => {
   const [value, setValue] = useState(0);
 
   const increment = async () => {
-    if(value+1 < prodObj.prodQuantity){
+    if(value < prodObj.prodQuantity){
       setValue(value+1);
       setter(count + 1)
       await axios({
@@ -48,6 +48,7 @@ const Card = (props) => {
 
   return (
     <div className={styles.card} >
+      {prodObj.prodQuantity === 0? <div className={styles.sold}>Sold Out</div>: null}
         <img src={prodObj.prodImage} alt="prodImage" width="150px" height="150px"/>
         <div className={styles.details}>
           <div className={styles.text}>
