@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`the ViewGeneratedTemplates component should render correctly 1`] = `
+exports[`the Header component should render correctly 1`] = `
 <DocumentFragment>
   <div>
     <svg

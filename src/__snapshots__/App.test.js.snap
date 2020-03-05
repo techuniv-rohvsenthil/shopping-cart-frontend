@@ -25,31 +25,122 @@ exports[`the App component should render correctly 1`] = `
       All
     </button>
     <div>
-      <img
-        alt="prodImage"
-        height="150px"
-        src="https://techunic-eval4.s3.amazonaws.com/apple.jpg"
-        width="150px"
-      />
       <div>
         <div>
-          Apple - 1kg
+          <img
+            alt="prodImage"
+            height="150px"
+            src="https://techunic-eval4.s3.amazonaws.com/apple.jpg"
+            width="150px"
+          />
+          <div>
+            <div>
+              Apple - 1kg
+            </div>
+            <div>
+              MRP 210 /-
+            </div>
+            <div>
+              <button
+                type="button"
+              >
+                +
+              </button>
+              10
+              <button
+                type="button"
+              >
+                -
+              </button>
+            </div>
+          </div>
         </div>
         <div>
-          MRP 210 /-
+          <img
+            alt="prodImage"
+            height="150px"
+            src="https://techunic-eval4.s3.amazonaws.com/apple.jpg"
+            width="150px"
+          />
+          <div>
+            <div>
+              Apple - 1kg
+            </div>
+            <div>
+              MRP 210 /-
+            </div>
+            <div>
+              <button
+                type="button"
+              >
+                +
+              </button>
+              10
+              <button
+                type="button"
+              >
+                -
+              </button>
+            </div>
+          </div>
         </div>
         <div>
-          <button
-            type="button"
-          >
-            +
-          </button>
-          10
-          <button
-            type="button"
-          >
-            -
-          </button>
+          <img
+            alt="prodImage"
+            height="150px"
+            src="https://techunic-eval4.s3.amazonaws.com/apple.jpg"
+            width="150px"
+          />
+          <div>
+            <div>
+              Apple - 1kg
+            </div>
+            <div>
+              MRP 210 /-
+            </div>
+            <div>
+              <button
+                type="button"
+              >
+                +
+              </button>
+              10
+              <button
+                type="button"
+              >
+                -
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            alt="prodImage"
+            height="150px"
+            src="https://techunic-eval4.s3.amazonaws.com/apple.jpg"
+            width="150px"
+          />
+          <div>
+            <div>
+              Apple - 1kg
+            </div>
+            <div>
+              MRP 210 /-
+            </div>
+            <div>
+              <button
+                type="button"
+              >
+                +
+              </button>
+              10
+              <button
+                type="button"
+              >
+                -
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
