@@ -4,7 +4,7 @@ import * as styles from './index.module.css';
 import Button from '../Button';
 
 const FilterTab = (props) => {
-  const { data } = props;
+  const { data, setter } = props;
   if (!data.length) {
     return (
       <div />
@@ -13,10 +13,10 @@ const FilterTab = (props) => {
 
   const categories = data.map((prod) => prod.prodCategory)
   const category = [...new Set(categories)];
+  category.unshift('All');
   const tabs = category.map((tab) => (
-    <Button buttonTestID="test-btn">{tab}</Button>
+    <Button buttonTestID="test-btn" setter={setter}>{tab}</Button>
   ));
-  tabs.unshift(<Button buttonTestID="test-btn">All</Button>);
   return (
     <div className={styles.tab}>
       {tabs}

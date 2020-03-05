@@ -19,6 +19,9 @@ exports[`the ViewProducts component should render correctly 1`] = `
     <div>
       Filter Categories
       <div />
+      <div>
+        All
+      </div>
     </div>
     <div>
       <h2>
