@@ -11,3 +11,12 @@
 .icon{
     padding-right: 3rem;
 }
+
+.button{
+    background-color: none;
+    border: none;
+}
+
+button:focus{
+    outline: none;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import * as styles from './index.module.css';
 import Checkout from '../../components/Checkout';
+import { useHistory } from 'react-router-dom';
 import Table from '../../components/Table';
 
 const cart = [
@@ -30,6 +31,7 @@ const cart = [
 
 const Cart = (prop) => {
     const {count} = prop;
+    const history = useHistory();
   return (
     <div>
       <div className={styles.positioning}>
@@ -47,7 +49,7 @@ const Cart = (prop) => {
               <div>
             <Checkout cart={cart}/>
             </div>
-            <button type="button" className={styles.button}>Continue Shopping</button>
+            <button type="button" className={styles.button} onClick={() => {history.goBack()}}>Continue Shopping</button>
           </div>
       </div>
     </div>

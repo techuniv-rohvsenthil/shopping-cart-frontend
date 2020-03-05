@@ -1,5 +1,7 @@
 import React from 'react';
 import { render, waitForDomChange } from '@testing-library/react';
+import { Router } from 'react-router-dom';
+import { createMemoryHistory } from 'history';
 import axios from 'axios';
 import ViewProducts from './index';
 
@@ -15,7 +17,8 @@ describe('the ViewProducts component', () => {
           prodImage: 'https://techunic-eval4.s3.amazonaws.com/apple.jpg',
         }],
     });
-    const { asFragment } = render(<ViewProducts />);
+    const history = createMemoryHistory();
+    const { asFragment } = render(<Router history={history}><ViewProducts /></Router>);
 
     expect(asFragment()).toMatchSnapshot();
   });
