@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import propTypes from 'prop-types';
 import * as styles from './index.module.css';
 import Card from '../Card';

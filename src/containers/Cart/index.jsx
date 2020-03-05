@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Header from '../../components/Header';
 import * as styles from './index.module.css';
 import Checkout from '../../components/Checkout';
+import TableContent from '../../components/TableContent';
 
 const cart = [
   {
@@ -40,7 +41,7 @@ const Cart = (prop) => {
       </div>
       <div className={styles.components}>
           <div>
-            summary
+            <TableContent item="item" price="price" quantity="quantity" subtotal="subtotal" />
           </div>
           <div>
               <div>
