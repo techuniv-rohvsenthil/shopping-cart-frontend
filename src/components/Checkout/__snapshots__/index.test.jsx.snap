@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the CheckOut component should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <div>
+        Total
+      </div>
+      200
+    </div>
+    <div />
+    <button
+      type="button"
+    >
+      Checkout
+    </button>
+  </div>
+</DocumentFragment>
+`;

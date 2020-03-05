@@ -1,9 +1,31 @@
 import React, {useState} from 'react';
 import Header from '../../components/Header';
 import * as styles from './index.module.css';
-import CardHolder from '../../components/CardHolder';
-import useProductDetails from '../../hooks/useProductDetails'
-import FilterTab from '../../components/FilterTab';
+import Checkout from '../../components/Checkout';
+
+const cart = [
+  {
+    item: "apple",
+    price: 50,
+    quantity: 2,
+  },
+  {
+    item: "apple",
+    price: 50,
+    quantity: 2,
+  },
+  {
+    item: "apple",
+    price: 50,
+    quantity: 2,
+  },
+  {
+    item: "apple",
+    price: 50,
+    quantity: 2,
+  },
+]
+
 
 const Cart = (prop) => {
     const {count} = prop;
@@ -14,7 +36,7 @@ const Cart = (prop) => {
       </div>
       <Header />
       <div className={styles.title}>
-          Your Shopping Cart (3 items)
+          Your Shopping Cart ({cart.length} items)
       </div>
       <div className={styles.components}>
           <div>
@@ -22,9 +44,9 @@ const Cart = (prop) => {
           </div>
           <div>
               <div>
-            checkout
+            <Checkout cart={cart}/>
             </div>
-
+            <button type="button" className={styles.button}>Continue Shopping</button>
           </div>
       </div>
     </div>
