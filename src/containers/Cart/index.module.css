@@ -1,0 +1,30 @@
+.cart{
+    border-radius: 50%;
+    background-color:#c62828;
+    color: white;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.positioning{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2.5rem;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: start;
+    margin-top: 2.5rem;
+    padding-left: 8rem;
+}
+
+.components{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}

@@ -7,6 +7,11 @@ exports[`the App component should render correctly 1`] = `
   >
     <div>
       <div>
+        <div>
+          0
+        </div>
+      </div>
+      <div>
         <svg
           aria-hidden="true"
           class="MuiSvgIcon-root makeStyles-root-1"
