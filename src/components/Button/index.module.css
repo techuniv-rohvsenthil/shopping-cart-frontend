@@ -2,12 +2,11 @@
     background-color: #bdbdbd;
     height: 3rem;
     color: black;
-    margin: 0.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
     font-family: 'Poppins';
-    border-radius: 10%;
     font-size: 1.1rem;
+    border: none;
 }
 
 button:active{

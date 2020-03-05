@@ -16,12 +16,10 @@ exports[`the ViewProducts component should render correctly 1`] = `
         />
       </svg>
     </div>
-    <button
-      data-testid="test-btn"
-      type="button"
-    >
-      All
-    </button>
+    <div>
+      Filter Categories
+      <div />
+    </div>
     <div>
       <h2>
         No Data Available
