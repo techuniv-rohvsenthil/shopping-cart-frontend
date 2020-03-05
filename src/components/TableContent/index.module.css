@@ -10,7 +10,7 @@
 }
 
 .text{
-    flex-grow: 1;
+    width: 11rem;
     font-size: 1rem;
     padding: 1rem;
     border: solid 0.05rem;
