@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import Card from './index';
 
 const prodObj = {
@@ -14,4 +14,11 @@ describe('the Card component', () => {
     const { asFragment } = render(<Card  prodObj={prodObj}/>);
     expect(asFragment()).toMatchSnapshot();
   });
+
+  xit('should increment count when the + button is clicked', () => {
+    const { getByTestId } = render(<Card prodObj={prodObj}/>);
+    fireEvent.click(getByTestId('inc'));
+    
+  });
+
 });

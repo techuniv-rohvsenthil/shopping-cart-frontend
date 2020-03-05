@@ -18,15 +18,17 @@ exports[`the Card component should render correctly 1`] = `
       </div>
       <div>
         <button
-          type="button"
-        >
-          +
-        </button>
-        10
-        <button
+          data-testid="dec"
           type="button"
         >
           -
+        </button>
+        0
+        <button
+          data-testid="inc"
+          type="button"
+        >
+          +
         </button>
       </div>
     </div>
