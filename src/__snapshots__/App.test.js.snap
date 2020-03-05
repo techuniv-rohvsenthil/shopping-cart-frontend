@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`the ViewGeneratedTemplates component should render correctly 1`] = `
+exports[`the App component should render correctly 1`] = `
 <DocumentFragment>
   <div
     class="App"
@@ -18,6 +18,12 @@ exports[`the ViewGeneratedTemplates component should render correctly 1`] = `
         />
       </svg>
     </div>
+    <button
+      data-testid="test-btn"
+      type="button"
+    >
+      All
+    </button>
   </div>
 </DocumentFragment>
 `;
