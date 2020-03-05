@@ -3,16 +3,17 @@ import Header from '../../components/Header';
 import * as styles from './index.module.css';
 import CardHolder from '../../components/CardHolder';
 import useProductDetails from '../../hooks/useProductDetails'
+import useCartDetails from '../../hooks/useCartDetails'
 import FilterTab from '../../components/FilterTab';
 
 const ViewProducts = () => {
-  const [data, callComplete] = useProductDetails();
+  const [data] = useProductDetails();
+  const [, cartCount, setCartCount] = useCartDetails();
   const [categoryName, setCategoryName] = useState('All');
-  const [count, setCount] = useState(0);
   return (
     <div>
       <div className={styles.positioning}>
-  <div className={styles.cart}>{count}</div>
+      <div className={styles.cart}>{cartCount}</div>
       </div>
       <Header />
       <div>
@@ -22,7 +23,7 @@ const ViewProducts = () => {
         {categoryName}
       </div>
       </div>
-      <CardHolder data={data} setter={setCount} value={count}/>
+      <CardHolder data={data} setter={setCartCount} value={cartCount}/>
     </div>
   );
 }

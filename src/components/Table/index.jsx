@@ -5,15 +5,16 @@ import TableContent from '../TableContent';
 
 const Table = (props) => {
     const { items } = props;
-    if (!items.length) {
+    const data = Object.keys(items).map(key => items[key] );
+    if (!data.length) {
         return (
             <div className={styles.cardContainer}>
                 <TableContent item="item" price="price" quantity="quantity" subtotal="subtotal" />
             </div>
         );
     }
-    const rows = items.map((item) => (
-        <TableContent item={item.item} price={item.price} quantity={item.quantity} subtotal="subtotal" />
+    const rows = data.map((item) => (
+        <TableContent item={item.name} price={item.price} quantity={item.quantity} subtotal={item.price*item.quantity} />
     ));
     rows.unshift(<TableContent item="item" price="price" quantity="quantity" subtotal="subtotal" />);
     return (
@@ -26,7 +27,7 @@ const Table = (props) => {
 };
 
 Table.propTypes = {
-    items: propTypes.arrayOf(propTypes.object).isRequired,
+    items: propTypes.objectOf(propTypes.object).isRequired,
 };
 
 

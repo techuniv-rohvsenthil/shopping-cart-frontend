@@ -6,7 +6,7 @@ const Checkout = (props) => {
     const { cart } = props;
     let price = 0;
     if (cart.length) {
-        const items = cart.map((prod) => prod.price)
+        const items = cart.map((prod) => parseInt(prod.price))
         price = items.reduce((a, b) => a + b, 0)
     }
     return (
