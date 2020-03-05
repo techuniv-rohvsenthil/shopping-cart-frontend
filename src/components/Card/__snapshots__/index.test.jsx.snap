@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the Card component should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <img
+      alt="prodImage"
+      height="150px"
+      src="https://techunic-eval4.s3.amazonaws.com/apple.jpg"
+      width="150px"
+    />
+    <div>
+      <div>
+        Apple - 1kg
+      </div>
+      <div>
+        MRP 210 /-
+      </div>
+      <div>
+        <button
+          type="button"
+        >
+          +
+        </button>
+        10
+        <button
+          type="button"
+        >
+          -
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
