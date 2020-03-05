@@ -14,7 +14,7 @@ const Card = (props) => {
     }
   }
   const decrement = () => {
-    if(value-1 > 0){
+    if(value-1 > -1){
       setValue(value-1);
       setter(count - 1)
     }
