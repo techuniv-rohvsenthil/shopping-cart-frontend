@@ -1,0 +1,13 @@
+.headerBar{
+    display: flex;
+    justify-content: flex-end;
+    height: '7rem';
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 3px 5px 2px rgba(105, 105, 105, .5);
+}
+
+.icon{
+    padding-right: 3rem;
+}

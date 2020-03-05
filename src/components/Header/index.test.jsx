@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import Header from './index';
 
 describe('the ViewGeneratedTemplates component', () => {
   it('should render correctly', () => {
-    const { asFragment } = render(<App />);
+    const { asFragment } = render(<Header />);
     expect(asFragment()).toMatchSnapshot();
   });
 });
