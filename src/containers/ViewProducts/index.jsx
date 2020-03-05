@@ -8,8 +8,12 @@ import FilterTab from '../../components/FilterTab';
 const ViewProducts = () => {
   const [data, callComplete] = useProductDetails();
   const [categoryName, setCategoryName] = useState('All');
+  const [count, setCount] = useState(0);
   return (
     <div>
+      <div className={styles.positioning}>
+  <div className={styles.cart}>{count}</div>
+      </div>
       <Header />
       <div>
         Filter Categories
@@ -18,7 +22,7 @@ const ViewProducts = () => {
         {categoryName}
       </div>
       </div>
-      <CardHolder data={data} />
+      <CardHolder data={data} setter={setCount} value={count}/>
     </div>
   );
 }

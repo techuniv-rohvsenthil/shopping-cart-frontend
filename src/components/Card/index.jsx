@@ -3,18 +3,20 @@ import propTypes from 'prop-types';
 import * as styles from './index.module.css';
 
 const Card = (props) => {
-  const {prodObj} = props;
+  const {prodObj, setter, count} = props;
 
   const [value, setValue] = useState(0);
 
   const increment = () => {
     if(value+1 < prodObj.prodQuantity){
       setValue(value+1);
+      setter(count + 1)
     }
   }
   const decrement = () => {
     if(value-1 > 0){
       setValue(value-1);
+      setter(count - 1)
     }
   }
 

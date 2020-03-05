@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import propTypes from 'prop-types';
 import * as styles from './index.module.css';
 import Card from '../Card';
 
 const CardHolder = (props) => {
-  const { data } = props;
+  const { data, setter, value } = props;
   if (!data.length) {
     return (
       <div className={styles.cardContainer}>
@@ -16,6 +16,8 @@ const CardHolder = (props) => {
     <Card
       key={prod.prodId}
       prodObj = {prod}
+      setter = {setter}
+      count = {value}
     />
   ));
   return (
