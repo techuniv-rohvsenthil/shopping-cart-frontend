@@ -1,22 +1,48 @@
 import React, {useState} from 'react';
 import propTypes from 'prop-types';
 import * as styles from './index.module.css';
+import axios from 'axios';
 
 const Card = (props) => {
   const {prodObj, setter, count} = props;
 
   const [value, setValue] = useState(0);
 
-  const increment = () => {
+  const increment = async () => {
     if(value+1 < prodObj.prodQuantity){
       setValue(value+1);
       setter(count + 1)
+      await axios({
+        method: 'post',
+        url: 'http://localhost:8080/items',
+        data: { 
+          cartObj: {
+          item: prodObj.prodName, 
+          price: prodObj.prodPrice,
+          quantity: 1, 
+          },
+          action: 'store',
+        },
+      });
+
     }
   }
-  const decrement = () => {
+  const decrement = async () => {
     if(value-1 > -1){
       setValue(value-1);
       setter(count - 1)
+      await axios({
+        method: 'post',
+        url: 'http://localhost:8080/items',
+        data: { 
+          cartObj: {
+          item: prodObj.prodName, 
+          price: prodObj.prodPrice,
+          quantity: 1, 
+          },
+          action: 'remove',
+        },
+      });
     }
   }
 
