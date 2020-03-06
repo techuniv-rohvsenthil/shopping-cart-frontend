@@ -11,7 +11,7 @@ const Card = (props) => {
   const increment = async () => {
     if(value < prodObj.prodQuantity){
       setValue(value+1);
-      setter(count + 1)
+      setter(count + 1);
       await axios({
         method: 'post',
         url: 'http://localhost:8080/items',
@@ -30,7 +30,7 @@ const Card = (props) => {
   const decrement = async () => {
     if(value-1 > -1){
       setValue(value-1);
-      setter(count - 1)
+      setter(count - 1);
       await axios({
         method: 'post',
         url: 'http://localhost:8080/items',
@@ -70,6 +70,8 @@ const Card = (props) => {
 
 Card.propTypes = {
   prodObj: propTypes.objectOf(propTypes.string).isRequired,
+  setter: propTypes.func.isRequired,
+  count: propTypes.number.isRequired,
 };
 
 
