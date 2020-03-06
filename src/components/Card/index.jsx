@@ -50,7 +50,7 @@ const Card = (props) => {
 
   return (
     <div className={styles.card} >
-      {prodObj.prodQuantity === 0? <div className={styles.sold}>Sold Out</div>: null}
+      {prodObj.prodQuantity <= 0? <div className={styles.sold}>Sold Out</div>: null}
         <img src={prodObj.prodImage} alt="prodImage" width="150px" height="150px"/>
         <div className={styles.details}>
           <div className={styles.text}>
