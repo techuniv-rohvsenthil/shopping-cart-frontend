@@ -13,10 +13,10 @@ const Table = (props) => {
             </div>
         );
     }
-    const rows = data.map((item) => (
-        <TableContent item={item.name} price={(item.price).toString()} quantity={(item.quantity).toString()} subtotal={(item.price*item.quantity).toString()} />
+    const rows = data.map((item, index) => (
+        <TableContent key={index} item={item.name} price={(item.price).toString()} quantity={(item.quantity).toString()} subtotal={(item.price*item.quantity).toString()} />
     ));
-    rows.unshift(<TableContent item="item" price="price" quantity="quantity" subtotal="subtotal" />);
+    rows.unshift(<TableContent key={data.length} item="item" price="price" quantity="quantity" subtotal="subtotal" />);
     return (
         <div >
             <div >

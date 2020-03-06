@@ -31,8 +31,8 @@ const Cart = () => {
           <div>
             <Table items={items}/>
           </div>
-          <div>
-              <div>
+          <div data-testid="container-div">
+              <div  data-testid="checkout-div">
             <Checkout cart={data}/>
             </div>
             <button type="button" className={styles.button} onClick={() => {window.history.back()}}>Continue Shopping</button>

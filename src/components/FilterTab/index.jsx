@@ -10,8 +10,8 @@ const FilterTab = (props) => {
       <div />
     );
   }
-  const tabs = data.map((tab) => (
-    <Button buttonTestID={"test-btn"} setter={setter}>{tab}</Button>
+  const tabs = data.map((tab, index) => (
+    <Button key={index} buttonTestID={"test-btn"} setter={setter}>{tab}</Button>
   ));
   return (
     <div className={styles.tab}>

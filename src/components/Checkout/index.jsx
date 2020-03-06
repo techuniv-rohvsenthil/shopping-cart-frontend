@@ -22,7 +22,7 @@ const Checkout = (props) => {
     }
 
     return (
-        <div className={styles.box}>
+        <div className={styles.box} data-testid="box-div" >
             <div className={styles.innerbox}>
                 <div>
                 Total
@@ -30,7 +30,7 @@ const Checkout = (props) => {
                 {price}
             </div>
             <div className={styles.divider}/>
-            <button type="button" data-testId="checkout" className={styles.button} onClick={checkout}>Checkout</button>
+            <button type="button" data-testid="checkout" className={styles.button} onClick={checkout}>Checkout</button>
         </div>
     );
 };

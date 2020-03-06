@@ -47,9 +47,15 @@ exports[`the Cart component should render correctly 1`] = `
           </div>
         </div>
       </div>
-      <div>
-        <div>
-          <div>
+      <div
+        data-testid="container-div"
+      >
+        <div
+          data-testid="checkout-div"
+        >
+          <div
+            data-testid="box-div"
+          >
             <div>
               <div>
                 Total
