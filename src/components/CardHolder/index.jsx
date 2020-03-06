@@ -4,7 +4,7 @@ import * as styles from './index.module.css';
 import Card from '../Card';
 
 const CardHolder = (props) => {
-  const { data, setter, value, quantity } = props;
+  const { data, setter, value} = props;
   if (!data.length) {
     return (
       <div className={styles.cardContainer}>
@@ -22,7 +22,6 @@ const CardHolder = (props) => {
       prodObj = {prod}
       setter = {setter}
       count = {value}
-      quantity= {quantity}
     />
   ));
   return (
