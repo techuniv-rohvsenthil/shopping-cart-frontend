@@ -12,7 +12,11 @@ const CardHolder = (props) => {
       </div>
     );
   }
-  const products = data.map((prod) => (
+  const temp = [...data]
+  temp.sort(function(a, b){
+    return b.prodQuantity - a.prodQuantity
+})
+  const products = temp.map((prod) => (
     <Card
       key={prod.prodId}
       prodObj = {prod}
