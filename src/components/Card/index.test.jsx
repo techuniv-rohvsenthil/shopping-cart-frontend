@@ -31,7 +31,6 @@ describe('the Card component', () => {
   xit('should make api call when - button is clicked', async () => {
     axios.mockImplementation(() => {});
     const { getByTestId } = render(<Card prodObj={prodObj}  setter={()=>{}} count={0}/>);
-    await waitForDomChange();
     fireEvent.click(getByTestId('dec'));
     expect(axios).toHaveBeenCalled();
     

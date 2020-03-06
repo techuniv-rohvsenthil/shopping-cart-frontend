@@ -4,10 +4,9 @@ import * as styles from './index.module.css';
 import axios from 'axios';
 
 const Card = (props) => {
-  const {prodObj, setter, count} = props;
-
+  const {prodObj, setter, count, quantity} = props;
   const [value, setValue] = useState(0);
-
+  //setValue(quantity.filter(i => i.name === prodObj.prodName).quantity);
   const increment = async () => {
     if(value < prodObj.prodQuantity){
       setValue(value+1);

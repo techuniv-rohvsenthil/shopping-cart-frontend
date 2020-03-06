@@ -2,12 +2,10 @@ import React from 'react';
 import Header from '../../components/Header';
 import * as styles from './index.module.css';
 import Checkout from '../../components/Checkout';
-import { useHistory } from 'react-router-dom';
 import Table from '../../components/Table';
 import useCartDetails from '../../hooks/useCartDetails';
 
 const Cart = () => {
-    const history = useHistory();
     const [data] = useCartDetails();
     let items = {};
     data.forEach((item) => {

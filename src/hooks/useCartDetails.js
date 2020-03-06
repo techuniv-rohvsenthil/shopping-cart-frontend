@@ -21,6 +21,6 @@ const useCartDetails = () => {
     };
     asyncFunc();
   }, []);
-  return [cart, cartCount, setCartCount];
+  return [cart, cartCount, setCartCount, callComplete];
 };
 export default useCartDetails;
