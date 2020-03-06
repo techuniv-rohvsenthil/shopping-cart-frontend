@@ -14,6 +14,7 @@ const Button = (props) => {
 Button.propTypes = {
   children: propTypes.string.isRequired,
   buttonTestID: propTypes.string.isRequired,
+  setter: propTypes.func.isRequired,
 };
 
 

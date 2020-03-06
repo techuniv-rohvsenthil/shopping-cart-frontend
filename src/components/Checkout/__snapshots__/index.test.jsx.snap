@@ -11,6 +11,7 @@ exports[`the CheckOut component should render correctly 1`] = `
     </div>
     <div />
     <button
+      data-testid="checkout"
       type="button"
     >
       Checkout

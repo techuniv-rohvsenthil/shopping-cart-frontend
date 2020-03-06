@@ -11,7 +11,7 @@ const FilterTab = (props) => {
     );
   }
   const tabs = data.map((tab) => (
-    <Button buttonTestID="test-btn" setter={setter}>{tab}</Button>
+    <Button buttonTestID={"test-btn"} setter={setter}>{tab}</Button>
   ));
   return (
     <div className={styles.tab}>
@@ -22,6 +22,7 @@ const FilterTab = (props) => {
 
 FilterTab.propTypes = {
   data: propTypes.arrayOf(propTypes.string).isRequired,
+  setter: propTypes.func.isRequired,
 };
 
 

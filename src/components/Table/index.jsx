@@ -14,7 +14,7 @@ const Table = (props) => {
         );
     }
     const rows = data.map((item) => (
-        <TableContent item={item.name} price={item.price} quantity={item.quantity} subtotal={item.price*item.quantity} />
+        <TableContent item={item.name} price={(item.price).toString()} quantity={(item.quantity).toString()} subtotal={(item.price*item.quantity).toString()} />
     ));
     rows.unshift(<TableContent item="item" price="price" quantity="quantity" subtotal="subtotal" />);
     return (

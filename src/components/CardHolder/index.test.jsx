@@ -37,7 +37,7 @@ const prodArray = [
 
 describe('the CardHolder component', () => {
   it('should render correctly', () => {
-    const { asFragment } = render(<CardHolder  data={prodArray}/>);
+    const { asFragment } = render(<CardHolder data={prodArray} setter={() => {}} value={0}/>);
     expect(asFragment()).toMatchSnapshot();
   });
 });

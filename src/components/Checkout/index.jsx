@@ -30,7 +30,7 @@ const Checkout = (props) => {
                 {price}
             </div>
             <div className={styles.divider}/>
-            <button type="button" className={styles.button} onClick={checkout}>Checkout</button>
+            <button type="button" data-testId="checkout" className={styles.button} onClick={checkout}>Checkout</button>
         </div>
     );
 };

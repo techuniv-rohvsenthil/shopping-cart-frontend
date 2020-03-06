@@ -6,7 +6,7 @@ const catArray = ['cat1', 'cat2', 'cat3'];
 
 describe('the FilterTab component', () => {
   it('should render correctly', () => {
-    const { asFragment } = render(<FilterTab  data={catArray}/>);
+    const { asFragment } = render(<FilterTab  data={catArray} setter={()=>{}}/>);
     expect(asFragment()).toMatchSnapshot();
   });
 });

@@ -35,6 +35,8 @@ const CardHolder = (props) => {
 
 CardHolder.propTypes = {
   data: propTypes.arrayOf(propTypes.object).isRequired,
+  setter: propTypes.func.isRequired,
+  value: propTypes.number.isRequired,
 };
 
 

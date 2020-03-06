@@ -19,43 +19,9 @@ exports[`the Table component should render correctly 1`] = `
         </div>
       </div>
       <div>
-        <div />
         <div>
-          50
+          apple
         </div>
-        <div>
-          2
-        </div>
-        <div>
-          100
-        </div>
-      </div>
-      <div>
-        <div />
-        <div>
-          50
-        </div>
-        <div>
-          2
-        </div>
-        <div>
-          100
-        </div>
-      </div>
-      <div>
-        <div />
-        <div>
-          50
-        </div>
-        <div>
-          2
-        </div>
-        <div>
-          100
-        </div>
-      </div>
-      <div>
-        <div />
         <div>
           50
         </div>
