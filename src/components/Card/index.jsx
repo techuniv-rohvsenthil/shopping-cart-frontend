@@ -2,9 +2,12 @@ import React, {useState} from 'react';
 import propTypes from 'prop-types';
 import * as styles from './index.module.css';
 import axios from 'axios';
+//import useCountDetails from '../../hooks/useCountDetails';
 
 const Card = (props) => {
-  const {prodObj, setter, count, quantity} = props;
+  const {prodObj, setter, count} = props;
+  // const [cart, setCart] = useCountDetails();
+  // console.log(cart);
   const [value, setValue] = useState(0);
   //setValue(quantity.filter(i => i.name === prodObj.prodName).quantity);
   const increment = async () => {
