@@ -19,11 +19,10 @@ describe('the ViewProducts component', () => {
     });
     const history = createMemoryHistory();
     const { asFragment } = render(<Router history={history}><ViewProducts /></Router>);
-
     expect(asFragment()).toMatchSnapshot();
   });
 
-  xit('should make an api call to retrieve all templates', async () => {
+  xit('should make an api call to retrieve all products', async () => {
     const mockAxios = jest.spyOn(axios, 'get');
     mockAxios.mockResolvedValue({
         data: [{
